@@ -1,0 +1,6 @@
+{
+  "ws_node": "ws://127.0.0.1:9944",
+  "signer0": "5DFJF7tY4bpbpcKPJcBTQaKuCDEPCpiz8TRjpmLeTtweqmXL",
+  "signer1": "5ES1kxH2Rno7JPnpQRiYpstbSbUhibAhzvNG1c8oJXoN8Nka",
+  "deployer_seed": "//Alice"
+}

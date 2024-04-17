@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+  # key derived from "//0"
+  AlephDevnode:
+    image: public.ecr.aws/p6e8q1z1/aleph-node:r-13.2
+    container_name: aleph_devnode
+    user: "${UID}:${GID}"
+    volumes:
+      - ./5D34dL5prEUaGNQtPPZ3yN5Y6BnkfXunKXXz6fo7ZJbLwRRH:/data
+    network_mode: host
+    environment:
+      - RPC_PORT=9944
+      - PORT=30334
+      - VALIDATOR_PORT=30344
+      - PUBLIC_VALIDATOR_ADDRESS=127.0.0.1:30344
+      - BOOT_NODES=/ip4/127.0.0.1/tcp/30334/p2p/12D3KooWF8rAsEhfqTKhbRnKwZdsX4ZRCapyPE3ttFLkMiv4Jyfe
+      - PURGE_BEFORE_START=false
+      - RUST_LOG=info
+      - BASE_PATH=/data
+      - CHAIN=/data/chainspec.json
+      - NODE_KEY_PATH=/data/p2p_secret
+      - ALLOW_PRIVATE_IPV4=true
+      - DISCOVER_LOCAL=false
+      - UNIT_CREATION_DELAY=500
+      - NAME=AlephDevnode

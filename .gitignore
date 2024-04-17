@@ -1,0 +1,8 @@
+backup-stash/
+db/
+target/
+node_modules/
+artifacts/
+types/
+addresses.json
+code_hashes.json

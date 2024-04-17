@@ -1,0 +1,9 @@
+{
+  "projectFiles": [
+    "escrow/*",
+    "old_a/*",
+    "new_a/*"
+  ],
+  "typechainGeneratedPath": "types",
+  "workspacePath": "./contracts"
+}
