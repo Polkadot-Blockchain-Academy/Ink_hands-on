@@ -12,7 +12,7 @@ clean:
 .PHONY: devnode
 devnode: # Run azero devnode
 devnode:
-	docker compose -f ./devnet-azero/devnet-azero-compose.yml up
+	docker compose -f ./devnet-azero/devnet-azero-compose.yml up --remove-orphans
 
 .PHONY: deps
 deps: # Install npm dependencies
