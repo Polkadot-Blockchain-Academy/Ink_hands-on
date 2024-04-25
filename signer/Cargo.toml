@@ -1,0 +1,23 @@
+[package]
+name = "signer"
+version = "0.1.0"
+edition = "2021"
+authors = ["fbielejec <filip.bielejec@cardinals.cc>"]
+
+[dependencies]
+aleph_client = { git = "https://github.com/Cardinal-Cryptography/aleph-node", rev = "r-13.2" }
+anyhow = "1.0.75"
+clap = { version = "4.3.4", features = ["derive"] }
+env_logger = "0.10.0"
+futures = "0.3.28"
+hex = "0.4.3"
+log = "0.4.20"
+serde = "1.0.188"
+serde_json = "1.0.105"
+subxt = { version = "0.30.1", features = ["substrate-compat"] }
+thiserror = "1.0.48"
+tiny-keccak = { version = "2.0.2", features = ["keccak"]}
+tokio = { version = "1.36", features = ["rt", "rt-multi-thread", "macros", "test-util", "sync"] }
+
+[dev-dependencies]
+ed25519-dalek = { version = "2.1.1" }
