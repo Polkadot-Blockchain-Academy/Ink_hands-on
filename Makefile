@@ -9,12 +9,6 @@ clean: # Remove all node and compilation data
 clean:
 	git clean -fdx
 
-.PHONY: bootstrap-azero
-bootstrap-azero: # Bootstrap the node data
-bootstrap-azero:
-	cd devnet-azero && \
-	cp azero_chainspec.json 5D34dL5prEUaGNQtPPZ3yN5Y6BnkfXunKXXz6fo7ZJbLwRRH/chainspec.json
-
 .PHONY: devnode
 devnode: # Run azero devnode
 devnode:
