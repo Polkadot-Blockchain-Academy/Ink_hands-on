@@ -8,10 +8,7 @@
         "deploy-escrow": "npm config set script-shell \"/bin/bash\"; ts-node scripts/1_deploy_escrow.ts",
         "deploy-old-a": "npm config set script-shell \"/bin/bash\"; ts-node scripts/2_deploy_old_a.ts",
         "upload-new-a": "npm config set script-shell \"/bin/bash\"; ts-node scripts/3_upload_new_a.ts",
-        "upgrade-a": "npm config set script-shell \"/bin/bash\"; ts-node scripts/4_upgrade_a.ts",
-        "deploy-multisig": "npm config set script-shell \"/bin/bash\"; ts-node scripts/5_deploy_multisig.ts",
-        "transfer-request": "npm config set script-shell \"/bin/bash\"; ts-node scripts/6_request_transfer.ts",
-        "check-balance": "npm config set script-shell \"/bin/bash\"; ts-node scripts/7_check_balance.ts"
+        "upgrade-a": "npm config set script-shell \"/bin/bash\"; ts-node scripts/4_upgrade_a.ts"
     },
     "dependencies": {
         "@727-ventures/typechain-compiler": "^1.1.0",
