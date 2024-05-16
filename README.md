@@ -10,7 +10,7 @@
 2. Have cargo-contract (`3.2.0`) installed:
 
 ```bash
-cargo +nightly-2024-02-04 install cargo-contract --vers 3.2.0 --force --locked
+cargo install cargo-contract --vers 3.2.0
 ```
 
 Install [polkadot{.js}](https://polkadot.js.org/extension/) extension.
