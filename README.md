@@ -53,3 +53,9 @@ AZERO_ENV=testnet make <command>
 ### Testnet faucet
 
 [https://faucet.test.azero.dev/](https://faucet.test.azero.dev/)
+
+### Cargo contract calls
+
+```bash
+cargo contract call --url wss://ws.test.azero.dev --contract <address> --message get_values --suri "//Alice" --skip-confirm
+```

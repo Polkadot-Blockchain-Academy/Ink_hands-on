@@ -36,7 +36,7 @@ deploy-old-a: compile
 
 .PHONY: upload-new-a
 upload-new-a: # uploads new contract code
-upload-new-a: deploy-old-a
+upload-new-a:
 	npm run upload-new-a
 
 .PHONY: upgrade-a
