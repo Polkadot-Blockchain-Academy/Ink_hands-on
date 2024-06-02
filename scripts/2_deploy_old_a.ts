@@ -32,13 +32,6 @@ async function main(): Promise<void> {
   const deployer = keyring.addFromUri(deployer_seed);
   console.log("Using", deployer.address, "as the deployer");
 
-  const escrowCodeHash = await uploadCode(
-    api,
-    deployer,
-    "escrow.contract",
-  );
-  console.log("escrow code hash:", escrowCodeHash);
-
   const oldAConstructors = new OldAConstructors(api, deployer);
 
   let estimatedGasOldA = await estimateContractInit(
