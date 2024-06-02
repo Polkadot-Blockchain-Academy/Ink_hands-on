@@ -26,7 +26,7 @@ Add these two accounts:
 make devnode
 ```
 
-## Contracts
+## Escrow Smart Contract
 
 To compile:
 
@@ -49,6 +49,25 @@ To deploy a given command run on the Azero Testnet preceed it with the name of t
 ```bash
 AZERO_ENV=testnet make <command>
 ```
+
+## Upgradeable contracts
+
+1. Deploy the `old_a` contract:
+```bash
+AZERO_ENV=testnet make deploy-old-a
+```
+2. Import and query it using the [https://ui.use.ink/add-contract](https://ui.use.ink/add-contract) UI dashboard.
+3. Upgrade the contract:
+```bash
+AZERO_ENV=testnet make upgrade-a
+```
+4. Query the state again
+5. Take a look at the `set_code` call in the old contract and try to understand it.
+ - what is the raw cross-contract call doing?
+ - what happens if it fails?
+ - why is it important to use the `ManualKey` in contracts storage here?
+ - Could you achieve a similar upgrade without using `Lazy`?
+
 
 ### Testnet faucet
 
