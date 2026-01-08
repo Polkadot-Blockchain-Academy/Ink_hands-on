@@ -8,8 +8,7 @@
     "deploy-escrow": "npm config set script-shell \"/bin/bash\"; ts-node scripts/1_deploy_escrow.ts",
     "deploy-old-a": "npm config set script-shell \"/bin/bash\"; ts-node scripts/2_deploy_old_a.ts",
     "upload-new-a": "npm config set script-shell \"/bin/bash\"; ts-node scripts/3_upload_new_a.ts",
-    "upgrade-a": "npm config set script-shell \"/bin/bash\"; ts-node scripts/4_upgrade_a.ts",
-    "preinstall": "node preinstall.js"
+    "upgrade-a": "npm config set script-shell \"/bin/bash\"; ts-node scripts/4_upgrade_a.ts"
   },
   "dependencies": {
     "@727-ventures/typechain-compiler": "^1.1.0",
